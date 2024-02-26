@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+.nav_content_203{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #333;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+}
+
+.logo{
+    height: 50px;
+    border-radius: 50%;
+}
+
+#barrasearch{
+    padding: 5px 10px;
+    width: 301px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#iconobusqueda{
+    color: #ffffff;
+    padding: 7px;
+    left: 4px;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #2525bd;
+}
+
+.barra_de_busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.content_results_table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+tbody,th,tr {
+    padding: 5px;
+}
+
+.content-pag{
+    padding: 20px;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+#clearIcon{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    position: relative;
+    right: 100%;
+    top: 50%;
+    margin-top: 13px;
+    transform: translateY(-50%);
+    display: inline-block;
+    font-size: 25px;
+}
+
+.table_header{
+    background-color: rgb(255 190 7);
+}

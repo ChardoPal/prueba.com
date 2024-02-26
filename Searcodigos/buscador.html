@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Codigos</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Searcodigos/stylesheet/buscador_style_do.js.css">
+    <link rel="stylesheet" href="/Searcodigos/stylesheet/footer.do.css">
+    <link rel="stylesheet" href="/Searcodigos/stylesheet/barra_search.do.css">
+    <link rel="stylesheet" href="/Searcodigos/stylesheet/modal.do.js.css">
+    <script src="/Searcodigos/scrpitpro/edition.js"></script>
+    <script type="module" src="/Searcodigos/scrpitpro/moda.show.do.js"></script>
+    <script type="module" src="/Searcodigos/scrpitpro/clearboton.do.css.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="encabezado_header">
+        <nav class="nav_content_203">
+            <div class="img" oncontextmenu="customContextMenu(event)">
+                <img class="logo" id="logo" src="favicon.png" alt="favicon" srcset="favicon.png">
+            </div>
+        <label for="title">Busque el codigo Aduanal</label>
+            <div class="link_user">
+                <a class="exit_user018313" href="" title="Cerrar Sesión" id="link_exit_user">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path fill="#ffffff" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"/></svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="content-pag">
+        <div class="search_bsu">
+            <table>
+                <tr>
+                    <div class="barra_de_busqueda">
+                        <div class="search-bar">
+                            <div>
+                                <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                            </div>
+                            <input type="text" class="search-input" autocomplete="off" placeholder="Buscar por nombre de Aduana o Codigo">
+                            <div>
+                                <button class="clear-button"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+                            </div>
+                        </div>
+                        <div class="Button_Search">
+                            <button id="button1038123" type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>Buscar</button>
+                        </div>
+                    </div>                    
+                </tr>
+            </table>
+        </div>
+        <div class="content_results_table">
+            <table border="1" style="width: 80%;">
+                <tbody>
+                    <tr class="table_header">
+                        <th style="width: 10px;">N°</th>
+                        <th style="width: 40%;">Nombre de la Aduana</th>
+                        <th style="width: 10%;">Código</th>
+                        <th style="width: 80%;">Observación</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="indication_03340129jdfss">
+            <div class="button">
+                <button id="openModalBtn">Indicaciones</button>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">
+                        <i id="X" class="fa-solid fa-circle-xmark"></i>
+                    </span>
+                    <h2>Instrucciones del buscador</h2>
+                    <p><br></p>
+                    <table border="1" style="width: 100%;">
+                        <tbody>
+                            <tr style="background: #ffca00;">
+                                <td style="width: 48.1914%;">
+                                    <div style="text-align: center;">NOMBRE DE LA ADUANA</div>
+                                </td>
+                                <td style="width: 51.7332%;">
+                                    <div style="text-align: center;">CODIGO</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 48.1914%;">Puede Buscar por el nombre de aduana que se encuentra en la DUCA-T, ojo que a veces el nombre final está en observaciones.</td>
+                                <td style="width: 51.7332%;">Puede buscar por el c&oacute;digo por si se lo puede.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="left-text" title="Sistema de busqueda de codigos aduanales">SIBCOA</div>
+        <p class="center-text" style="color: #666;">©Copyright. 2024-2028</p>
+        <p class="right-text">Versión:<span id="version"></span></p>
+    </footer> 
+    <script>
+        function customContextMenu(event) {
+            // Evitar que aparezca el menú contextual por defecto
+            event.preventDefault();
+    
+            // Obtener el elemento que recibió el clic derecho
+            var targetElement = event.target;
+        }
+    </script>       
+</body>
+</html>

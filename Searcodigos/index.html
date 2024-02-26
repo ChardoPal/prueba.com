@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="customContextMenu(event)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="/Searcodigos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Searcodigos/stylesheet/footer.do.css">
+    <script type="module" src="/Searcodigos/scrpitpro/edition.js"></script>
+    <link rel="stylesheet" href="/Searcodigos/stylesheet/buscador_style_do.js.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: -19px 20px 20px 13px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-icon {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            left: -11px;
+            color: #fff;
+            border-radius: 5px 0px 0px 5px;
+            background: #494848;
+            padding: 10px;
+        }
+
+        input {
+            width: calc(100% - -7px);
+            padding: 10px;
+            padding-left: 30px;
+            margin: 5px 0 15px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+            outline: none;
+        }
+
+        .submit {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            display: flex;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .submit:hover {
+            background-color: #0056b3;
+        }
+
+        .register_parent-link {
+            background-color: #28a745;
+            width: 100%;
+            color: #fff;
+            border: none;
+            display: flex;
+            border-radius: 5px;
+            /*font-weight: bold;*/
+            cursor: pointer;
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+        }
+
+        .register_parent-link:hover {
+            background-color: #218838;
+            padding: 12px 5px;
+        }
+
+        .register_parent-link {
+            text-decoration: none;
+            color: #fff;
+            padding: 12px 5px;
+            margin-top: 5px;
+        }
+
+        .form_login_9173_ini{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .report_error_user018313{
+            color: white;
+        }
+
+        .report_error_user018313:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header class="encabezado_header">
+    <nav class="nav_content_203">
+        <div class="img">
+            <img class="logo" id="logo" src="/Searcodigos/favicon.png" alt="favicon" srcset="/Searcodigos/favicon.png">
+        </div>
+    <label for="title" style="color: white;" class="title">Bienvenid@s</label>
+        <div class="link_user">
+            <a class="report_error_user018313" href="" title="Reportar Errores" id="link_problem_user">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12" y2="8"/>
+                  </svg>
+            </a>
+        </div>
+    </nav>
+</header>
+<div class="form_login_9173_ini">
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="post">
+            <label for="username">Usuario:</label>
+            <div class="input-container">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="username" name="username" autocomplete="off" required>
+            </div>
+
+            <label for="password">Contraseña:</label>
+            <div class="input-container">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" id="password" name="password" autocomplete="off" required>
+            </div>
+
+            <button class="submit" type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="14px" style="margin-right: 5px;" viewBox="0 0 448 512"><path fill="#ffffff" d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>Iniciar Sesión</button>
+            <a class="register_parent-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="14" style="margin-right: 5px;" width="17.5" viewBox="0 0 640 512"><path fill="#ffffff" d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>Registrarse</a>
+        </form>
+    </div>
+</div> 
+<footer>
+    <div class="left-text" title="Sistema de busqueda de codigos aduanales">SIBCOA</div>
+    <p class="center-text" style="color: #666;">©Copyright. 2024-2028</p>
+    <p class="right-text">Versión:<span id="version"></span></p>
+</footer> 
+<!-- prueba drp
+<script>
+    function customContextMenu(event) {
+        event.preventDefault();
+
+        var targetElement = event.target;
+    }
+</script>  
+-->
+</body>
+</html>
